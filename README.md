@@ -78,7 +78,7 @@ data.isnull().sum()
 ```python
 sns.relplot(x='Price', y='Bathrooms', hue='Floors', data=data)
 ```
-![alt text](House_Price_Prediction_Analysis_png\image.png)
+![Price vs Bathrooms(with Floors) Analysis](House_Price_Prediction_Analysis_png/image.png)
 
 **Observation:**
 
@@ -92,7 +92,7 @@ sns.relplot(x='Price', y='Bathrooms', hue='Floors', data=data)
 ```python
 sns.relplot(x='Price', y='YearBuilt', data=data)
 ```
-![alt text](House_Price_Prediction_Analysis_png\image-1.png)
+![Price vs Year Built Analysis](House_Price_Prediction_Analysis_png\image-1.png)
 
 **Observation:**
 
@@ -106,7 +106,7 @@ sns.relplot(x='Price', y='YearBuilt', data=data)
 ```python
 sns.relplot(x='Price', y='Condition', data=data)
 ```
-![alt text](House_Price_Prediction_Analysis_png\image-2.png)
+![Price vs Condition Analyis](House_Price_Prediction_Analysis_png\image-2.png)
 
 **Observation:**
 
@@ -121,35 +121,6 @@ sns.relplot(x='Price', y='Condition', data=data)
 * Price ranges from **50,000 to ~1,000,000**
 * No strong linear relationships observed in basic plots
 * Categorical variables (Location, Condition, Garage) need encoding
-
----
-
-## 🚀 Future Work
-
-### ✔ Data Preprocessing
-
-```python
-data = pd.get_dummies(data, drop_first=True)
-```
-
-### ✔ Feature & Target Split
-
-```python
-X = data.drop('Price', axis=1)
-y = data['Price']
-```
-
-### ✔ Model Training
-
-```python
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-model = LinearRegression()
-model.fit(X_train, y_train)
-```
 
 ---
 
