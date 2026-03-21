@@ -92,7 +92,7 @@ sns.relplot(x='Price', y='Bathrooms', hue='Floors', data=data)
 ```python
 sns.relplot(x='Price', y='YearBuilt', data=data)
 ```
-![Price vs Year Built Analysis](House_Price_Prediction_Analysis_png\image-1.png)
+![Price vs Year Built Analysis](House_Price_Prediction_Analysis_png/image-1.png)
 
 **Observation:**
 
@@ -106,7 +106,7 @@ sns.relplot(x='Price', y='YearBuilt', data=data)
 ```python
 sns.relplot(x='Price', y='Condition', data=data)
 ```
-![Price vs Condition Analyis](House_Price_Prediction_Analysis_png\image-2.png)
+![Price vs Condition Analyis](House_Price_Prediction_Analysis_png/image-2.png)
 
 **Observation:**
 
