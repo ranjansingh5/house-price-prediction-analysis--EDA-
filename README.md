@@ -6,6 +6,16 @@ This project focuses on performing **Exploratory Data Analysis (EDA)** on a Hous
 
 ---
 
+## 🔗 Table of Contents
+
+- [Dataset Description](dataset-description)
+- [Features](features)
+- [Data Analysis Process](data-analysis-process)
+- [Data Visualization](data-visualization)
+- [Key Insights](key-insights)
+
+---
+
 ## 📂 Dataset Description
 
 The dataset consists of **2000 rows and 10 columns** representing various attributes of houses.
